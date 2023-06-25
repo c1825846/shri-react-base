@@ -1,0 +1,6 @@
+export { ArrowIcon } from './arrow'
+export { BasketIcon } from './basket'
+export { CloseIcon } from './close'
+export { MinusIcon } from './minus'
+export { PhotoIcon } from './photo'
+export { PlusIcon } from './plus'

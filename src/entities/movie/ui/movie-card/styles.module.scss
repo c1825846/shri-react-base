@@ -1,0 +1,50 @@
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+}
+
+.image {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.stats {
+    margin-bottom: 32px;
+    display: grid;
+    gap: 16px;
+}
+
+.stat {
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.key {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 16px;
+}

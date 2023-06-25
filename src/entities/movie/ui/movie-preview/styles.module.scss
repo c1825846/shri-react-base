@@ -1,0 +1,29 @@
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: 24px;
+    line-height: 20px;
+}
+
+.image {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.genre {
+    font-style: italic;
+}

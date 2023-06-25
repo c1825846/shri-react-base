@@ -1,0 +1,27 @@
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+        width: 28px;
+
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+.amount {
+    height: 28px;
+    min-width: 28px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    line-height: 1.42;
+    font-weight: 600;
+    background: var(--color-primary);
+    padding: 4px;
+    border-radius: 8px;
+    color: #fff;
+}

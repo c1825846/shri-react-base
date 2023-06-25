@@ -1,0 +1,41 @@
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background: #e0e0e0;
+
+    svg path {
+        fill: #828282;
+    }
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.rating span {
+    font-weight: 600;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+}
