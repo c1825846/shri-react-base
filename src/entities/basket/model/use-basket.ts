@@ -12,6 +12,7 @@ export const useBasket = () => {
     const removeAllTickets = (movieId: string) => dispatch(slice.removeAllTickets(movieId))
 
     return {
+        tickets,
         totalAmount,
         getAmountByMovieId,
         addOneTicket,

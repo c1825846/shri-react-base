@@ -2,17 +2,18 @@
 
 import React from 'react'
 import { TickerCounter } from '@/entities/basket'
-import { useGetMoviesQuery } from '@/entities/movie/model'
+import { Movie, useGetMoviesQuery } from '@/entities/movie'
 import { MoviePreview } from '@/entities/movie/ui/movie-preview'
 import styles from './styles.module.scss'
 
-export const MovieList: React.FC = () => {
-    const { data, isLoading, error } = useGetMoviesQuery()
-    if (isLoading) return <div>loading</div>
-    if (error) return <div>error</div>
+interface MovieListProps {
+    movies: Movie[]
+}
+
+export const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     return (
         <div className={styles.list}>
-            {data?.map(movie => (
+            {movies.map(movie => (
                 <MoviePreview
                     key={movie.id}
                     id={movie.id}

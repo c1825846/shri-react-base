@@ -19,6 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <body className={roboto.className}>
                     <Header pageTitle="Билетопоиск" sideInfo={<TotalTickets />} />
                     <main>{children}</main>
+                    <div id="dropdown"></div>
+                    <div id="modal"></div>
                     <Footer />
                 </body>
             </StoreProvider>
