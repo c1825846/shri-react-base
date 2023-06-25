@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '@/shared/ui/button'
 import { MinusIcon, PlusIcon } from '@/shared/ui/icons'
 import { useBasket } from '../../model'
+import { Modal } from '@/shared/ui/modal'
 import styles from './styles.module.scss'
 
 interface TickerCounterProps {
@@ -15,6 +16,7 @@ export const TickerCounter: React.FC<TickerCounterProps> = ({ movieId }) => {
     const ticketsAmount = getAmountByMovieId(movieId)
     return (
         <div className={styles.counter}>
+            <Modal content={<>adf</>}/>
             <Button
                 size="small"
                 disabled={ticketsAmount <= 0}

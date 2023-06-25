@@ -25,13 +25,16 @@ export const basketSlice = createSlice({
             if (state.tickets[action.payload] > 0) {
                 state.tickets[action.payload]--
             }
+            if (state.tickets[action.payload] === 0) {
+                delete state.tickets[action.payload]
+            }
         },
         removeAllTickets: (state, action: PayloadAction<string>) => {
             if (!state.tickets[action.payload]) {
                 return
             }
             if (state.tickets[action.payload] > 0) {
-                state.tickets[action.payload] = 0
+                delete state.tickets[action.payload]
             }
         },
     },

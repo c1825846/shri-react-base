@@ -3,8 +3,10 @@ import styles from './styles.module.scss'
 
 interface InputProps {
     placeholder?: string
+    onInput: (e?: React.SyntheticEvent) => void
+    
 }
 
-export const Input: React.FC<InputProps> = ({ placeholder }) => {
-    return <input type="text" className={styles.input} placeholder={placeholder} />
+export const Input: React.FC<InputProps> = ({ placeholder, onInput }) => {
+    return <input type="text" className={styles.input} placeholder={placeholder} onInput={onInput} />
 }
